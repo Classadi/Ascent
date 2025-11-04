@@ -1,7 +1,10 @@
 "use client";
 import { useEffect } from "react";
 import Navbar from "./Navbar";
+<<<<<<< HEAD
 // @ts-ignore: missing type declarations for 'aos'
+=======
+>>>>>>> 1321dbffd4a79a57852e36ae42a69f1f5f54592e
 import AOS from "aos";
 
 const NavbarWrapper = (

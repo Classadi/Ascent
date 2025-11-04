@@ -1,3 +1,4 @@
+// tsconfig.json (Use this as the definitive file)
 {
   "compilerOptions": {
     "target": "ES2017",
@@ -18,10 +19,31 @@
         "name": "next"
       }
     ],
+<<<<<<< HEAD
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
+=======
+    // --- Path Resolution Configuration ---
+    "baseUrl": "./src", // This tells TypeScript to start looking inside the 'src' folder
+    "paths": {
+      // The most versatile alias: Maps @/ to the src/ folder.
+      // E.g., @/app/page.tsx or @/components/ui/button.tsx
+      "@/*": ["./*"], 
+      
+      // Your existing component-specific aliases (Defined relative to baseUrl = src)
+      "@components/*": ["./components/*"],
+      "@styles/*": ["./styles/*"],
+      "@utils/*": ["./utils/*"],
+      "@hooks/*": ["./hooks/*"],
+      "@services/*": ["./services/*"],
+      "@context/*": ["./context/*"],
+      
+      // We must define app explicitly since Next.js uses it heavily
+      "@/app/*": ["./app/*"] 
+>>>>>>> 1321dbffd4a79a57852e36ae42a69f1f5f54592e
     }
+    // ------------------------------------
   },
   "include": [
     "next-env.d.ts",
