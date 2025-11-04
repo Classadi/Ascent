@@ -2,8 +2,8 @@
 
 import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "src/app/components/ui/card";
+import { Button } from "src/app/components/ui/button";
 
 interface ClubCardProps {
   name: string;
